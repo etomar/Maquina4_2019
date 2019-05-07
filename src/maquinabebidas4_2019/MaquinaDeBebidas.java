@@ -55,6 +55,7 @@ public class MaquinaDeBebidas {
         System.out.println("Limon: "+limon.botesDisponibles());
         System.out.println("Tonica: "+tonica.botesDisponibles());
         System.out.println("Agua: "+agua.botesDisponibles());
+        System.out.println("Precio: "+precio);
         System.out.println("Saldo Disponible: "+contador.getSaldo());
         
     } 
