@@ -2,12 +2,12 @@ package maquinabebidas4_2019;
 /**
  * @author Javier
  */
-class MaquinaDeBebidas { 
-    //Contador de monedas de la maquina 
+public class MaquinaDeBebidas { 
+  /*Contador de monedas de la maquina*/
     private ContadorDeMonedas contador; 
-    //Cinco dispensadores de botes limon, naranja, tonica, agua; 
-    private DispensadorDeBotes cola;
-    //Precio de las bebidas(común para todas) 
+    /*Cinco dispensadores de botes*/
+    private DispensadorDeBotes cola, limon, naranja, tonica, agua; 
+    /*Precio de las bebidas(común paratodas)*/
     private float precio;
     
     /* Inicializa la maquina y todos los elementos asociados */ 
@@ -17,7 +17,7 @@ class MaquinaDeBebidas {
     /* Salidas: Ninguna */ 
     public void iniciarMaquinaDeBebidas (float m, int b, float pvp){
     contador=new ContadorDeMonedas(m);
-    cola= new DispensadorDeBotes(b);
+    this.cola= new DispensadorDeBotes(b);
     precio=pvp;
     
 }
