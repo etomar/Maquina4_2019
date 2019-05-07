@@ -1,9 +1,15 @@
-
+package maquinabebidas4_2019;
 /** 
  * @author Daniel Sanchez
  */
 class DispensadorDeBotes
 {
+    
+public DispensadorDeBotes(int b){
+    iniciarDispensadorDeBotes(b);
+    
+}    
+    
 private int botes; 
 //Numero actual de botes.
 /* Inicializa el dispensador y pone i botes en él*/

@@ -9,7 +9,7 @@ class MaquinaDeBebidas {
     private DispensadorDeBotes cola;
     //Precio de las bebidas(común para todas) 
     private float precio;
-
+    
     /* Inicializa la maquina y todos los elementos asociados */ 
     /* Entradas: float m, cantidad inicial de monedas para el cambio */ 
     /* int b, cantidad inicial de botes en los dispensadores */ 
@@ -17,7 +17,8 @@ class MaquinaDeBebidas {
     /* Salidas: Ninguna */ 
     public void iniciarMaquinaDeBebidas (float m, int b, float pvp){
     contador=new ContadorDeMonedas(m);
-    cola= new DispensadorDeBotes(b,pvp);
+    cola= new DispensadorDeBotes(b);
+    precio=pvp;
     
 }
     
@@ -40,7 +41,8 @@ class MaquinaDeBebidas {
     /* Entradas: Ninguna */ 
     /* Salidas: Ninguna */ 
     public void visualizarMaquina (){
-        
+       /* Botes en cada dispensador, precio de las bebidas, saldo del cliente */ 
+        System.out.println("Saldo Disponible: "+contador.getSaldo());
         
     } 
     /* Realiza las acciones relacionadas con la introducción de monedas */ 
