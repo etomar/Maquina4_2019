@@ -2,8 +2,8 @@ package maquinabebidas4_2019;
 /**
  * @author Javier
  */
-class MaquinaDeBebidas { 
-    //Contador de monedas de la maquina 
+public class MaquinaDeBebidas { 
+  /*Contador de monedas de la maquina*/
     private ContadorDeMonedas contador; 
     //Cinco dispensadores de botes limon, naranja, tonica, agua; 
     private DispensadorDeBotes limon;
