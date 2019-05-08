@@ -1,6 +1,6 @@
 package maquinabebidas4_2019;
 /*
-*@Author:Daniel Sanchez (En lugar de Dan Nedelea).
+*@Author:Daniel Sanchez ,Javier Rodenas (En lugar de Dan Nedelea).
 */
 public class ContadorDeMonedas {
 
@@ -15,10 +15,9 @@ public class ContadorDeMonedas {
 	
 	public void iniciarContadorDeMonedas (float i) {
 		disponible=i;
-		
 	}
 	
-	
+        
 	
 	/* Informa sobre el saldo actual del cliente */
 	/* Entradas: Ninguna */

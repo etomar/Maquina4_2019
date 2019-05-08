@@ -66,22 +66,22 @@ public class MaquinaDeBebidas {
         
         switch (o){
         case 'A': //- Introducir moneda de 5 cent. (Pulsar 'A')
-            
+            contador.insertarMoneda(0.05);
         break;
         case 'B': //- Introducir moneda de 10 cent. (Pulsar 'B') 
-            
+            contador.insertarMoneda(0.10);
         break;  
         case 'C': //- Introducir moneda de 20 cent. (Pulsar 'C') 
-            
+            contador.insertarMoneda(0.20);
         break;  
         case 'D': //- Introducir moneda de 50 cent. (Pulsar 'D')
-            
+            contador.insertarMoneda(0.50);
         break;   
         case 'E': //- Introducir moneda de 1 € (Pulsar 'E') 
-            
+            contador.insertarMoneda(1);
         break;   
         case 'R': //- Solicitar devolver las monedas introducidas (Pulsar 'R')
-            
+            contador.insertarMoneda(-contador.saldo());
         break;
         }
         
@@ -96,7 +96,7 @@ public class MaquinaDeBebidas {
             
             case 1://cola
                 if(cola.pulsarBoton()==true){
-                    if(precio<=contador.getSaldo()){
+                    if(precio<=contador.Saldo()){
                         cola.iniciarDispensadorDeBotes(cola.botesDisponibles ()-1);
                     }else{
                         System.out.println("Saldo insuficiente");
@@ -108,7 +108,7 @@ public class MaquinaDeBebidas {
             
             case 2://limon
                 if(limon.pulsarBoton()==true){
-                    if(precio<=contador.getSaldo()){
+                    if(precio<=contador.Saldo()){
                         limon.iniciarDispensadorDeBotes(limon.botesDisponibles ()-1);
                     }else{
                         System.out.println("Saldo insuficiente");
@@ -120,7 +120,7 @@ public class MaquinaDeBebidas {
             
             case 3://naranja
                 if(naranja.pulsarBoton()==true){
-                    if(precio<=contador.getSaldo()){
+                    if(precio<=contador.Saldo()){
                         naranja.iniciarDispensadorDeBotes(naranja.botesDisponibles ()-1);
                     }else{
                         System.out.println("Saldo insuficiente");
@@ -132,7 +132,7 @@ public class MaquinaDeBebidas {
             
             case 4://tonica
                 if(tonica.pulsarBoton()==true){
-                    if(precio<=contador.getSaldo()){
+                    if(precio<=contador.Saldo()){
                         tonica.iniciarDispensadorDeBotes(tonica.botesDisponibles ()-1);
                     }else{
                         System.out.println("Saldo insuficiente");
@@ -144,7 +144,7 @@ public class MaquinaDeBebidas {
             
             case 5://agua
                 if(agua.pulsarBoton()==true){
-                    if(precio<=contador.getSaldo()){
+                    if(precio<=contador.Saldo()){
                         agua.iniciarDispensadorDeBotes(agua.botesDisponibles ()-1);
                     }else{
                         System.out.println("Saldo insuficiente");
