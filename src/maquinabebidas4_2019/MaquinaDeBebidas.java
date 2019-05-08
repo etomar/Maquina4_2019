@@ -20,7 +20,7 @@ public class MaquinaDeBebidas {
     /* float pvp, precio de las bebidas */ 
     /* Salidas: Ninguna */ 
     public void iniciarMaquinaDeBebidas (float m, int b, float pvp){
-    contador=new ContadorDeMonedas(m);
+    //contador=new ContadorDeMonedas(m);
     cola= new DispensadorDeBotes(b);
     limon= new DispensadorDeBotes(b);
     naranja= new DispensadorDeBotes(b);
@@ -56,7 +56,7 @@ public class MaquinaDeBebidas {
         System.out.println("Tonica: "+tonica.botesDisponibles());
         System.out.println("Agua: "+agua.botesDisponibles());
         System.out.println("Precio: "+precio);
-        System.out.println("Saldo Disponible: "+contador.getSaldo());
+        //System.out.println("Saldo Disponible: "+contador.getSaldo());
         
     } 
     /* Realiza las acciones relacionadas con la introducción de monedas */ 
@@ -95,7 +95,7 @@ public class MaquinaDeBebidas {
         switch(o){
             
             case 1://cola
-                if(cola.pulsarBoton==true){
+                if(cola.pulsarBoton()==true){
                     if(precio<=contador.getSaldo()){
                         cola.iniciarDispensadorDeBotes(cola.botesDisponibles ()-1);
                     }else{
@@ -107,7 +107,7 @@ public class MaquinaDeBebidas {
             break;
             
             case 2://limon
-                if(limon.pulsarBoton==true){
+                if(limon.pulsarBoton()==true){
                     if(precio<=contador.getSaldo()){
                         limon.iniciarDispensadorDeBotes(limon.botesDisponibles ()-1);
                     }else{
@@ -119,7 +119,7 @@ public class MaquinaDeBebidas {
             break;
             
             case 3://naranja
-                if(naranja.pulsarBoton==true){
+                if(naranja.pulsarBoton()==true){
                     if(precio<=contador.getSaldo()){
                         naranja.iniciarDispensadorDeBotes(naranja.botesDisponibles ()-1);
                     }else{
@@ -131,7 +131,7 @@ public class MaquinaDeBebidas {
             break;
             
             case 4://tonica
-                if(tonica.pulsarBoton==true){
+                if(tonica.pulsarBoton()==true){
                     if(precio<=contador.getSaldo()){
                         tonica.iniciarDispensadorDeBotes(tonica.botesDisponibles ()-1);
                     }else{
@@ -143,7 +143,7 @@ public class MaquinaDeBebidas {
             break;
             
             case 5://agua
-                if(agua.pulsarBoton==true){
+                if(agua.pulsarBoton()==true){
                     if(precio<=contador.getSaldo()){
                         agua.iniciarDispensadorDeBotes(agua.botesDisponibles ()-1);
                     }else{
